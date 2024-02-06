@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About Us</title>
+</head>
+
+<body class="bg-[url('/img/image.png')] bg-center bg-cover bg-no-repeat h-[100vh] w-screen relative">
+
+    <header class="bg-[#FFFFFF30] rounded-[19px] m-8 min-h-20 flex flex-col justify-evenly">
+        <nav class="text-white flex items-center justify-between px-12 h-15">
+            <div class="logo flex">
+                <img src="../img/logo.png" class="h-12" />
+                <a href="#" class="text-2xl font-bold border-0 px-2 py-2 ml-3">CodeCraft</a>
+            </div>
+            <div id="nav-items">
+                <ul class="flex flex-row gap-8 items-center">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-[#966d6d] hover:underline">About</a></li>
+                    <li>
+                        <form class="flex items-center">
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <input type="text" id="simple-search"
+                                    class="bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full ps-10 p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500"
+                                    placeholder="Find something" required />
+                            </div>
+                            <button type="submit"
+                                class="p-2.5 ms-2 text-sm font-medium text-white bg-[#ffffff40] rounded-lg border border-black-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 dark:bg-black-600 dark:hover:bg-black-700 dark:focus:ring-black-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="grid grid-cols-2 gap-1 px-65 py-17">
+        <div class="wrapper bg-transparent rounded-lg w-full px-10 py-2 text-white">
+            <section class="container mx-auto my-6 p-6 bg-[#555555] shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold mb-2">Who We Are</h2>
+                <p class="text-white">
+                    Welcome to CodeCraft, your go-to platform for coding enthusiasts. We provide a powerful and user-friendly
+                    code editing experience tailored to meet the needs of developers, beginners, and professionals alike.
+                </p>
+
+                <h2 class="text-xl font-semibold mt-4 mb-2">Our Mission</h2>
+                <p class="text-white">
+                    Our mission is to empower individuals to express their creativity through coding. We strive to offer an
+                    accessible and feature-rich code editor that fosters learning, collaboration, and innovation within the
+                    developer community.
+                </p>
+
+                <h2 class="text-xl font-semibold mt-4 mb-2">Why Choose Code Editor?</h2>
+                <ul class="list-disc list-inside text white">
+                    <li>Intuitive User Interface</li>
+                    <li>Extensive Language Support</li>
+                    <li>Real-time Collaboration Features like live chat and many more</li>
+                    <li>Customizable Themes and Settings</li>
+                </ul>
+            </section>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-0 w-full px-10 py-2 ">
+            <div class="wrapper bg-transparent rounded-lg md:w-full px-10 py-2 text-white"></div>
+            <div class="grid-shrink-0 md:w-1/2 order-2 ml-auto">
+                <img src="/img/code.jpg" alt="Your Image" class="rounded-lg max-w-1/2 h-50 opacity-40">
+            </div>
+            <div class="grid-shrink-0 md:w-1/2 order-1">
+                <img src="/img/coding.jpg" alt="Your Image" class="rounded-lg max-w-1/3 h-50 opacity-40">
+            </div>
+        </div>  
+    </div>    
+
+    <footer class="bg-[#FFFFFF30] text-white text-center py-4">
+        <p>&copy; 2024 Code Editor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

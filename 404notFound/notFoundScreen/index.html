@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>404 Not Found</title>
+</head>
+
+<body class="bg-[url('/img/image.png')] bg-center bg-cover bg-no-repeat h-[100vh] w-screen relative">
+
+    <header class="bg-[#FFFFFF30] rounded-[19px] m-8 min-h-20 flex flex-col justify-evenly fixed top-0 left-0 right-0 z-10">
+        <nav class="text-white flex items-center justify-between px-12 h-15">
+            <div class="logo flex">
+                <img src="../img/logo.png" class="h-12" />
+                <a href="#" class="text-2xl font-bold border-0 px-2 py-2 ml-3">CodeCraft</a>
+            </div>
+            <div id="nav-items">
+                <ul class="flex flex-row gap-8 items-center">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-[#966d6d] hover:underline">About</a></li>
+                    <li>
+                        <form class="flex items-center">
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <input type="text" id="simple-search"
+                                    class="bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full ps-10 p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500"
+                                    placeholder="Find something" required />
+                            </div>
+                            <button type="submit"
+                                class="p-2.5 ms-2 text-sm font-medium text-white bg-[#ffffff40] rounded-lg border border-black-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 dark:bg-black-600 dark:hover:bg-black-700 dark:focus:ring-black-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex justify-center items-center h-screen">
+        <div class="max-w-md text-center">
+            <h1 class="text-9xl md:text-10xl lg:text-11xl font-semibold text-white">404</h1>
+            <p class="text-xl font-medium mb-4 text-white">Oops! Page Not Found</p>
+            <p class="text-lg text-[#ffffff50] mb-8">The page you are looking for doesn’t exist</p>
+            <a href="#" class="px-4 py-2 bg-[#ffffff90] text-white rounded-full hover:bg-[#ffffff40]">Go Back Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LoginPage</title>
+</head>
+
+<body class="bg-[url('/img/image.png')] bg-center bg-cover bg-no-repeat h-[100vh] w-screen relative">
+    <header class="bg-[#FFFFFF30] rounded-[19px] m-8 min-h-20 flex flex-col justify-evenly">
+        <nav class="text-white flex items-center justify-between px-12 h-15">
+            <div class="logo flex">
+                <img src="../img/logo.png" class="h-12" />
+                <a href="#" class="text-2xl font-bold border-0 px-2 py-2 ml-3">CodeCraft</a>
+            </div>
+            <div id="nav-items">
+                <ul class="flex flex-row gap-8 items-center">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li>
+                        <form class="flex items-center">
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <input type="text" id="simple-search"
+                                    class="bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full ps-10 p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500"
+                                    placeholder="Find something" required />
+                            </div>
+                            <button type="submit"
+                                class="p-2.5 ms-2 text-sm font-medium text-white bg-[#ffffff40] rounded-lg border border-black-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 dark:bg-black-600 dark:hover:bg-black-700 dark:focus:ring-black-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="grid grid-cols-2 gap-1 px-52 py-15">
+        <div class="wrapper bg-transparent rounded-lg w-2/3 px-6 py-10 text-white">
+            <form>
+                <h1 class="text-4xl text-center">Login</h1>
+                <h2 class="text-center text-lg">Sign in to continue</h2>
+                <div class="input-box relative w-full h-12 bg-white rounded-full my-4">
+                    <input type="text" placeholder="Username"
+                        class="w-full h-full bg-white rounded-full border-none outline-none pl-6 text-white" required>
+                    <i class='bx bxs-user absolute right-6 top-1/2 transform -translate-y-1/2 text-black text-xl'></i>
+                </div>
+                <div class="input-box relative w-full h-12 bg-white rounded-full my-4">
+                    <input type="password" placeholder="Password"
+                        class="w-full h-full bg-white rounded-full border-none outline-none pl-6 text-white" required>
+                    <i class='bx bxs-lock-alt absolute right-6 top-1/2 transform -translate-y-1/2 text-black text-xl'></i>
+                </div>
+                <div class="remember-forgot flex justify-between text-sm my-4">
+                    <label><input type="checkbox" class="accent-color"> Remember me</label>
+                    <a href="#" class="text-white font-semibold hover:underline">Forgot password?</a>
+                </div>
+
+                <button type="submit"
+                    class="btn w-full h-12 bg-[#ffffff90] rounded-full outline-none cursor-pointer text-lg hover:bg-[#ffffff40] font-semibold text-white">Login</button>
+                <div class="register-link text-sm text-center my-4">
+                    <p>Don't have an account?</p>
+                    <p>
+                        <a href="#" class="text-white font-semibold hover:underline">SignUp!</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="flex flex-col-reverse md:flex-row w-2/3">
+            <div class="wrapper bg-transparent rounded-lg md:w-1/2 px-6 py-8 text-white">
+            </div>
+            <div class="flex-shrink-0 md:w-1/2">
+                <img src="/img/card.png" alt="Your Image" class="rounded-lg opacity-60 max-w-80 h-auto">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

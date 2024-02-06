@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Us</title>
+</head>
+
+<body class="bg-[url('/img/image.png')] bg-center bg-cover bg-no-repeat h-[100vh] w-screen relative">
+
+    <header class="bg-[#FFFFFF30] rounded-[19px] m-8 min-h-20 flex flex-col justify-evenly">
+        <nav class="text-white flex items-center justify-between px-12 h-15">
+            <div class="logo flex">
+                <img src="../img/logo.png" class="h-12" />
+                <a href="#" class="text-2xl font-bold border-0 px-2 py-2 ml-3">CodeCraft</a>
+            </div>
+            <div id="nav-items">
+                <ul class="flex flex-row gap-8 items-center">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline hover:text-[#ffffff90]">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li>
+                        <form class="flex items-center">
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <input type="text" id="simple-search"
+                                    class="bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full ps-10 p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-white dark:focus:ring-black-500 dark:focus:border-black-500"
+                                    placeholder="Find something" required />
+                            </div>
+                            <button type="submit"
+                                class="p-2.5 ms-2 text-sm font-medium text-white bg-[#ffffff40] rounded-lg border border-black-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 dark:bg-black-600 dark:hover:bg-black-700 dark:focus:ring-black-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 px-7 py-0">
+        <div class="wrapper bg-transparent rounded-lg md:w-full px-32 py-2 text-white">
+            <section class="container mx-auto my-5 p-5 bg-[#FFFFFF30] shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-white text-sm font-medium mb-2">Your Name</label>
+                        <input type="text" id="name"
+                            class="w-full bg-white rounded-full border-none outline-none py-2 px-4 text-white"
+                            placeholder="Enter your name" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-white text-sm font-medium mb-2">Your Email</label>
+                        <input type="email" id="email"
+                            class="w-full bg-white rounded-full border-none outline-none py-2 px-4 text-white"
+                            placeholder="Enter your email" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-white text-sm font-medium mb-2">Message</label>
+                        <textarea id="message"
+                            class="w-full bg-white rounded-lg border-none outline-none py-2 px-4 text-white"
+                            placeholder="Type your message here" rows="4" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="btn w-full h-10 bg-[#ffffff90] rounded-full outline-none cursor-pointer text-lg hover:bg-[#ffffff40] font-semibold text-white">Submit</button>
+                </form>
+            </section>
+        </div>
+        <div class="grid-shrink-0 md:w-1/2">
+            <section class="contact-details mt-8 content-center">
+                <div class="mb-4">
+                    <h3 class="text-white text-2xl font-bold mb-2">Contact Number</h3>
+                    <p class="text-white">Phone: +91xxxxxxxxxx</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h3 class="text-white text-2xl font-bold mb-2">Email Address</h3>
+                    <p class="text-white">Email: name@gmail.com</p>
+                </div>
+            
+                <div>
+                    <h3 class="text-white text-2xl font-bold mb-2">Location Address</h3>
+                    <p class="text-white">cvr college of engineering,ibrahimpatnam</p>
+                </div>
+
+                <div><br><br><br>
+                    <p class="text-white font-extralight">We cherish the opportunity to connect with you! Whether you have questions about our platform, suggestions to share, or just want to say hello, feel free to reach out.</p>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <footer class="bg-[#FFFFFF30] text-white text-center py-4">
+        <p>&copy; 2024 Code Editor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
